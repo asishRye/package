@@ -13,12 +13,10 @@ pip install toolkitpack
 ## Usage
 
 ```python
-from toolkitpack import add
+from toolkitFile import add
 
 # Add two numbers
-a = 5
-b = 5
-add(a, b)
+add(5, 10)
 ```
 
 ## Steps to make your own
@@ -27,7 +25,7 @@ add(a, b)
 
 - Add your python code to src folder, the directory should look something like this
 
-  ![a](assets\tree.png)
+  ![img](tree.png)
 
 - Create a setup.py file in the same location as src folder
 
@@ -60,4 +58,23 @@ add(a, b)
 
   ```bash
   pip install -e .
+  ```
+
+- After making sure everything is working perfectly lets bind everything together
+
+  ```bash
+
+  python setup.py bdist_wheel sdist
+  ```
+
+- Now to upload our packages to PyPI index we need a tool named twine. Install it using the following command
+
+  ```bash
+  pip install twine
+  ```
+
+  Now upload the files in dist folder, it will ask for username and password
+
+  ```bash
+  twine upload dist/*
   ```

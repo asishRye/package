@@ -8,21 +8,21 @@ setup(
     name='toolkitpack',
     version='0.0.1',
     description='Random operations who cares',
-    url="",
-    author="Asish Binu Mathew"
+    url="https://github.com/asishRye/package",
+    author="Asish Binu Mathew",
     author_email="asish+pypi@accubits.com",
     py_modules=['toolkitFile', 'additionalFiles'],
     package_dir={'': 'src'},
     classifiers=["Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.7"],
+                 "Programming Language :: Python :: 3.7"],
     long_description=long_description,
     long_description_content_type="text/markdown",
 
-    install_requires= [
+    install_requires=[
         "blessings==1.7",
     ],
-    extra_require = {
-        "dev":[
+    extra_require={
+        "dev": [
             "pytest>=3.7",
         ]
     },

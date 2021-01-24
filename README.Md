@@ -27,7 +27,7 @@ add(a, b)
 
 - Add your python code to src folder, the directory should look something like this
 
-  ![a](\assets\tree.PNG)
+  ![a](assets\tree.png)
 
 - Create a setup.py file in the same location as src folder
 

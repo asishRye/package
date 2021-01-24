@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='toolkitpack',
-    version='0.0.1',
+    version='0.0.2',
     description='Random operations who cares',
     url="https://github.com/asishRye/package",
     author="Asish Binu Mathew",
